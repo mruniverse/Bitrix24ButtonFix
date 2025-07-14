@@ -29,6 +29,21 @@ _(Coming soon)_
 2. Open a popup that contains selectable items
 3. Click the "Todas" button - the extension will automatically detect this and click all items in the list
 
+### Visual Guide
+
+The extension works with popups like this one, where you can see the "Todas" button in the top-right corner:
+
+![Bitrix24 Popup with Todos Button](docs/bitrix24-popup-example.png)
+
+_The red arrow points to the "Todas" button that the extension will automatically detect and enhance with one-click functionality to select all items in the list._
+
+When you click the "Todas" button, the extension will automatically:
+
+-   Detect the button click
+-   Find all selectable items in the popup (like the apps shown: e-Signature for HR, Resource and appointment booking, etc.)
+-   Click each item to select them all
+-   Save you time from manually clicking each individual item
+
 ## Technical Details
 
 -   **Manifest Version**: 3
