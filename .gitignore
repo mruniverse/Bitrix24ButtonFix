@@ -18,3 +18,7 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# Extension files
+*.pem
+*.crx
