@@ -1,0 +1,20 @@
+# Debug logs
+debug.log
+
+# Chrome extension zip file
+bitrix24-button-fix.zip
+
+# Node modules (if any)
+node_modules/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
