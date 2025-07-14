@@ -4,15 +4,16 @@ A Chrome extension that automatically clicks all items in Bitrix24 popups when t
 
 ## Features
 
-- Automatically detects Bitrix24 popup dialogs (including those in iframes)
-- Finds the "Todas" button when it becomes available
-- Clicks all items in the popup with a single button press
-- Works seamlessly with Bitrix24's dynamic content loading
+-   Automatically detects Bitrix24 popup dialogs (including those in iframes)
+-   Finds the "Todas" button when it becomes available
+-   Clicks all items in the popup with a single button press
+-   Works seamlessly with Bitrix24's dynamic content loading
 
 ## Installation
 
 ### From Chrome Web Store
-*(Coming soon)*
+
+_(Coming soon)_
 
 ### Manual Installation (Developer Mode)
 
@@ -30,12 +31,12 @@ A Chrome extension that automatically clicks all items in Bitrix24 popups when t
 
 ## Technical Details
 
-- **Manifest Version**: 3
-- **Permissions**: `activeTab` (only accesses current tab when needed)
-- **Supported Domains**: 
-  - `*.bitrix24.com/*`
-  - `*.bitrix24.com.br/*` 
-  - `*.bitrix24.site/*`
+-   **Manifest Version**: 3
+-   **Permissions**: `activeTab` (only accesses current tab when needed)
+-   **Supported Domains**:
+    -   `*.bitrix24.com/*`
+    -   `*.bitrix24.com.br/*`
+    -   `*.bitrix24.site/*`
 
 ## How It Works
 
@@ -57,9 +58,9 @@ To modify or debug the extension:
 
 ## Files
 
-- `manifest.json` - Extension configuration
-- `content.js` - Main functionality script
-- `images/` - Extension icons
+-   `manifest.json` - Extension configuration
+-   `content.js` - Main functionality script
+-   `images/` - Extension icons
 
 ## License
 
