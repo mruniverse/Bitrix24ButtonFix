@@ -1,12 +1,13 @@
 title: Bitrix24 Button Fix
 description: Privacy Policy for Bitrix24 Button Fix Chrome Extension
 
+# Base URL for GitHub Pages from docs folder
+baseurl: "/Bitrix24ButtonFix"
+url: "https://mruniverse.github.io"
+
 # Enable redirect plugin
 plugins:
   - jekyll-redirect-from
 
 # Include all files (including index.html)
 include: ["index.html"]
-
-# Exclude files from being processed
-exclude: ["content.js", "manifest.json", "images/", "docs/"]

@@ -13,7 +13,7 @@ if (window.location.pathname === '/Bitrix24ButtonFix/' || window.location.pathna
 
 A Chrome extension that automatically clicks all items in Bitrix24 popups when the "Todas" (All) button is pressed.
 
-**[📄 View Privacy Policy](index.html)**
+**[📄 View Privacy Policy](docs/index.html)**
 
 ## Features
 
@@ -133,7 +133,7 @@ Open the browser's Developer Tools (F12) and check the Console tab to see loggin
 
 ## Privacy
 
-This extension does not collect, store, or transmit any personal data. All functionality operates locally within your browser. For complete details, see our [Privacy Policy](PRIVACY_POLICY.md).
+This extension does not collect, store, or transmit any personal data. All functionality operates locally within your browser. For complete details, see our [Privacy Policy](https://mruniverse.github.io/Bitrix24ButtonFix/).
 
 ## License
 
