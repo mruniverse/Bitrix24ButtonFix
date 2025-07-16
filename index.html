@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bitrix24 Button Fix - Privacy Policy</title>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                line-height: 1.6;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                color: #333;
+                background-color: #fff;
+            }
+
+            h1 {
+                color: #2c3e50;
+                border-bottom: 3px solid #3498db;
+                padding-bottom: 10px;
+            }
+
+            h2 {
+                color: #34495e;
+                margin-top: 30px;
+            }
+
+            h3 {
+                color: #7f8c8d;
+            }
+
+            .header {
+                text-align: center;
+                margin-bottom: 40px;
+                padding: 20px;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                border-radius: 10px;
+            }
+
+            .header h1 {
+                margin: 0;
+                border: none;
+                color: white;
+            }
+
+            .header p {
+                margin: 10px 0 0 0;
+                opacity: 0.9;
+            }
+
+            .section {
+                margin: 30px 0;
+                padding: 20px;
+                background: #f8f9fa;
+                border-left: 4px solid #3498db;
+                border-radius: 5px;
+            }
+
+            .highlight {
+                background: #e8f6f3;
+                padding: 15px;
+                border-radius: 5px;
+                border-left: 4px solid #27ae60;
+                margin: 20px 0;
+            }
+
+            .warning {
+                background: #fef9e7;
+                padding: 15px;
+                border-radius: 5px;
+                border-left: 4px solid #f39c12;
+                margin: 20px 0;
+            }
+
+            ul {
+                padding-left: 25px;
+            }
+
+            li {
+                margin: 8px 0;
+            }
+
+            .footer {
+                text-align: center;
+                margin-top: 50px;
+                padding: 20px;
+                background: #ecf0f1;
+                border-radius: 5px;
+                color: #7f8c8d;
+            }
+
+            .github-link {
+                display: inline-block;
+                margin: 10px;
+                padding: 10px 20px;
+                background: #333;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background 0.3s;
+            }
+
+            .github-link:hover {
+                background: #555;
+            }
+
+            @media (max-width: 600px) {
+                body {
+                    padding: 10px;
+                }
+
+                .header,
+                .section {
+                    padding: 15px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Bitrix24 Button Fix</h1>
+            <p>Privacy Policy for Chrome Extension</p>
+        </div>
+        <div class="highlight">
+            <strong>Last Updated:</strong> July 16, 2025
+        </div>
+        <div class="section">
+            <h2>Overview</h2>
+            <p>Bitrix24 Button Fix is a Chrome extension that automatically clicks all items in Bitrix24 popups when the
+                "Todas" (All) button is pressed. This privacy policy explains how the extension handles user data and
+                permissions.</p>
+        </div>
+        <div class="section">
+            <h2>Data Collection and Usage</h2>
+            <h3>What Data We DO NOT Collect</h3>
+            <ul>
+                <li><strong>Personal Information:</strong> We do not collect, store, or transmit any personal
+                    information</li>
+                <li><strong>Browsing History:</strong> We do not track or record your browsing activities</li>
+                <li><strong>User Data:</strong> We do not access, read, or store any user data from Bitrix24 or any
+                    other websites</li>
+                <li><strong>Cookies:</strong> We do not create, read, or modify cookies</li>
+                <li><strong>Local Storage:</strong> We do not access or modify local storage data</li>
+                <li><strong>Network Requests:</strong> We do not make any external network requests or send data to
+                    remote servers</li>
+            </ul>
+            <h3>What the Extension Does</h3>
+            <p>The extension only:</p>
+            <ul>
+                <li>Detects when you click the "Todas" button on Bitrix24 popup dialogs</li>
+                <li>Automatically clicks other selectable items within the same popup</li>
+                <li>Operates entirely locally within your browser</li>
+                <li>Does not store, transmit, or process any data</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Permissions Explanation</h2>
+            <h3>Content Scripts Access</h3>
+            <p><strong>Permission:</strong> Access to <code>*.bitrix24.com/*</code>, <code>*.bitrix24.com.br/*</code>,
+                and <code>*.bitrix24.site/*</code></p>
+            <p><strong>Purpose:</strong> This permission allows the extension to run its functionality only on Bitrix24
+                websites.</p>
+            <p><strong>Usage:</strong></p>
+            <ul>
+                <li>Detect the "Todas" button clicks</li>
+                <li>Find and click selectable items in popups</li>
+                <li>Monitor DOM changes for dynamic content</li>
+            </ul>
+            <p><strong>Data Access:</strong> The extension only reads DOM elements to identify buttons and clickable
+                items. No data is collected, stored, or transmitted.</p>
+            <h3>Why These Permissions Are Necessary</h3>
+            <ol>
+                <li><strong>Domain-Specific Functionality:</strong> The extension is designed exclusively for Bitrix24
+                    platforms</li>
+                <li><strong>Button Detection:</strong> Requires access to page elements to identify the "Todas" button
+                </li>
+                <li><strong>Automated Clicking:</strong> Needs to interact with DOM elements to click items
+                    automatically</li>
+                <li><strong>Dynamic Content:</strong> Must monitor page changes since Bitrix24 loads content dynamically
+                </li>
+            </ol>
+        </div>
+        <div class="section">
+            <h2>Data Security</h2>
+            <ul>
+                <li><strong>No Data Storage:</strong> Since we don't collect any data, there's no data to secure</li>
+                <li><strong>Local Processing:</strong> All functionality occurs locally in your browser</li>
+                <li><strong>No External Communication:</strong> The extension does not communicate with any external
+                    servers</li>
+                <li><strong>No Third-Party Services:</strong> We do not use any third-party analytics, tracking, or data
+                    services</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>User Control</h2>
+            <ul>
+                <li><strong>Enable/Disable:</strong> You can enable or disable the extension at any time through
+                    Chrome's extension management</li>
+                <li><strong>Uninstall:</strong> You can completely remove the extension without any data remnants</li>
+                <li><strong>Selective Use:</strong> The extension only works when you actively click the "Todas" button
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Contact Information</h2>
+            <p>For questions about this privacy policy or the extension's functionality:</p>
+            <ul>
+                <li><strong>GitHub Repository:</strong> <a
+                        href="https://github.com/mruniverse/Bitrix24ButtonFix">https://github.com/mruniverse/Bitrix24ButtonFix</a>
+                </li>
+                <li><strong>Issues:</strong> Use GitHub Issues for technical questions or concerns</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Compliance</h2>
+            <p>This extension:</p>
+            <ul>
+                <li>Does not collect personal data, so GDPR consent is not required</li>
+                <li>Does not use tracking technologies</li>
+                <li>Does not share data with third parties</li>
+                <li>Operates with minimal necessary permissions</li>
+                <li>Follows Chrome Web Store policies and guidelines</li>
+            </ul>
+        </div>
+        <div class="highlight">
+            <h2>In Summary</h2>
+            <p><strong>Bitrix24 Button Fix</strong> is a simple automation tool that enhances your Bitrix24 experience
+                by automating repetitive clicking tasks. It operates entirely locally, collects no data, and respects
+                your privacy completely.</p>
+        </div>
+        <div class="footer">
+            <a href="https://github.com/mruniverse/Bitrix24ButtonFix" class="github-link">View on GitHub</a>
+            <p>© 2025 Bitrix24 Button Fix. MIT License.</p>
+        </div>
+    </body>
+</html>
