@@ -117,3 +117,11 @@ Open the browser's Developer Tools (F12) and check the Console tab to see loggin
 -   Chrome/Chromium browsers
 -   Manifest V3 compatible
 -   Works with all Bitrix24 domains
+
+## Privacy
+
+This extension does not collect, store, or transmit any personal data. All functionality operates locally within your browser. For complete details, see our [Privacy Policy](PRIVACY_POLICY.md).
+
+## License
+
+MIT License - Feel free to use and modify as needed.
