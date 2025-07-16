@@ -1,17 +1,3 @@
-// Bitrix24 Button Fix - Simple Content Script
-console.log("Bitrix24 Button Fix: Starting simple version");
-
-// Function to click all items - exactly your code
-function clickAllItems() {
-	console.log("Bitrix24 Button Fix: Running click all items");
-	const array = document.getElementsByClassName("ui-tile-selector-searcher-content")[0].children;
-	for (item of array) {
-		item.click();
-		console.log("Clicked:", item.textContent.trim());
-	}
-	console.log("Bitrix24 Button Fix: Finished clicking all items");
-}
-
 // Function to find and attach listener to the button
 function attachButtonListener() {
 	// Force DOM reflow/repaint to make hidden elements accessible
@@ -40,8 +26,6 @@ function attachButtonListener() {
 	// Method 3: Search in all iframes
 	if (!button) {
 		const iframes = document.querySelectorAll("iframe");
-		console.log("Bitrix24 Button Fix: Checking", iframes.length, "iframes");
-
 		for (let iframe of iframes) {
 			try {
 				const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
@@ -76,30 +60,6 @@ function attachButtonListener() {
 						targetDocument = iframeDoc;
 						break;
 					}
-
-					// Debug: Log what we find in this iframe
-					const iframeSidebarItems = iframeDoc.getElementsByClassName(
-						"ui-tile-selector-searcher-sidebar-item"
-					);
-					if (iframeSidebarItems.length > 0) {
-						console.log(
-							"Bitrix24 Button Fix: Found",
-							iframeSidebarItems.length,
-							"sidebar items in iframe"
-						);
-						for (let i = 0; i < iframeSidebarItems.length; i++) {
-							console.log(
-								"Iframe Item",
-								i,
-								":",
-								iframeSidebarItems[i].textContent.trim(),
-								"Selected:",
-								iframeSidebarItems[i].classList.contains(
-									"ui-tile-selector-searcher-sidebar-item-selected"
-								)
-							);
-						}
-					}
 				}
 			} catch (e) {
 				console.log("Bitrix24 Button Fix: Cross-origin iframe, can't access:", e.message);
@@ -107,30 +67,10 @@ function attachButtonListener() {
 		}
 	}
 
-	// Debug: Log what elements we can find in main document
-	const sidebarItems = document.getElementsByClassName("ui-tile-selector-searcher-sidebar-item");
-	console.log(
-		"Bitrix24 Button Fix: Found",
-		sidebarItems.length,
-		"sidebar items in main document"
-	);
-	for (let i = 0; i < sidebarItems.length; i++) {
-		console.log(
-			"Main Item",
-			i,
-			":",
-			sidebarItems[i].textContent.trim(),
-			"Selected:",
-			sidebarItems[i].classList.contains("ui-tile-selector-searcher-sidebar-item-selected")
-		);
-	}
-
 	if (button && !button.hasListenerAttached) {
 		console.log("Bitrix24 Button Fix: Button found! Attaching listener");
 
 		button.addEventListener("click", () => {
-			console.log("Bitrix24 Button Fix: All button clicked!");
-
 			// Small delay to let the UI update, then run the code
 			// The clickAllItems function will need to search in the same document context
 			setTimeout(() => {
@@ -156,15 +96,11 @@ function clickAllItemsInDocument(doc = document) {
 	const array = doc.getElementsByClassName("ui-tile-selector-searcher-content")[0].children;
 	for (item of array) {
 		item.click();
-		console.log("Clicked:", item.textContent.trim());
 	}
-	console.log("Bitrix24 Button Fix: Finished clicking all items");
 }
 
 // Try to attach the listener immediately
 if (!attachButtonListener()) {
-	console.log("Bitrix24 Button Fix: Button not found yet, will keep checking...");
-
 	// Keep checking every 500ms until we find the button
 	const checkInterval = setInterval(() => {
 		if (attachButtonListener()) {
