@@ -1,6 +1,19 @@
+---
+layout: redirect
+redirect_to: "/index.html"
+---
+
+<script>
+if (window.location.pathname === '/Bitrix24ButtonFix/' || window.location.pathname === '/Bitrix24ButtonFix') {
+    window.location.href = '/Bitrix24ButtonFix/index.html';
+}
+</script>
+
 # Bitrix24 Button Fix Chrome Extension
 
 A Chrome extension that automatically clicks all items in Bitrix24 popups when the "Todas" (All) button is pressed.
+
+**[📄 View Privacy Policy](index.html)**
 
 ## Features
 
