@@ -1,3 +1,13 @@
 title: Bitrix24 Button Fix
 description: Privacy Policy for Bitrix24 Button Fix Chrome Extension
-theme: minima
+
+# Disable Jekyll processing and use static HTML
+plugins: []
+markdown: kramdown
+highlighter: rouge
+
+# Include all files (including index.html)
+include: ["index.html"]
+
+# Exclude README from being processed
+exclude: ["README.md", "PRIVACY_POLICY.md", "content.js", "manifest.json", "images/", "docs/"]
